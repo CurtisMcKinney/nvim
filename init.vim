@@ -13,6 +13,7 @@ Plug 'https://github.com/tomtom/tcomment_vim.git'
 Plug 'https://github.com/raichoo/haskell-vim.git'
 Plug 'https://github.com/tomasr/molokai.git'
 Plug 'https://github.com/octol/vim-cpp-enhanced-highlight.git'
+" Plug 'jeaye/color_coded'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 call plug#end()
 
@@ -86,6 +87,9 @@ let g:indentLine_char = '│'
 " set list
 " ,tab:>-,trail:~,extends:>,precedes:<
 
+" let g:cpp_experimental_template_highlight = 1
+let g:cpp_class_scope_highlight = 1
+
 "------------------------
 " Haskell
 "------------------------
@@ -151,8 +155,14 @@ nnoremap <LEADER>l :wincmd l<CR>
 " COLORSCHEME
 "------------------------
 colorscheme dracula " For some reason molokai has a bug where the current tab is blank unless you set a different colorscheme first....
-colorscheme molokai
-" colorscheme dracula
+
+" Customize some colors in dracula
+hi Normal guibg=#1a1f20
+hi Operator guifg=#2EAfCf
+hi Delimiter guifg=#50C0A0
+" hi Struct guifg=#2EAfCf
+
+" colorscheme molokai
 " colorscheme jellybeans
 " colorscheme wolfpack
 " colorscheme muon
@@ -160,7 +170,7 @@ colorscheme molokai
 " colorscheme inkpot
 " :set cursorline
 " hi Normal guibg=None
-" hi Normal guibg=100000000000
+" hi Normal guibg=#1F1F1F
 
 "------------------------
 " AIRLINE
