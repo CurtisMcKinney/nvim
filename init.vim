@@ -157,9 +157,10 @@ nnoremap <LEADER>l :wincmd l<CR>
 colorscheme dracula " For some reason molokai has a bug where the current tab is blank unless you set a different colorscheme first....
 
 " Customize some colors in dracula
-hi Normal guibg=#1a1f20
+hi Normal guibg=#1B1F20
+" hi Normal guibg=#202020
 hi Operator guifg=#2EAfCf
-hi Delimiter guifg=#50C0A0
+hi Delimiter guifg=#00FF80
 " hi Struct guifg=#2EAfCf
 
 " colorscheme molokai
