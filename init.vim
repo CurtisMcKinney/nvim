@@ -160,7 +160,7 @@ colorscheme dracula " For some reason molokai has a bug where the current tab is
 hi Normal guibg=#1B1F20
 " hi Normal guibg=#202020
 hi Operator guifg=#2EAfCf
-hi Delimiter guifg=#00FF80
+hi Delimiter guifg=#00E080
 " hi Struct guifg=#2EAfCf
 
 " colorscheme molokai
