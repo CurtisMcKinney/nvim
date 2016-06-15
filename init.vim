@@ -78,9 +78,10 @@ filetype on
 filetype indent on
 filetype plugin on
 
+let g:indentLine_char = ' '
 " let g:indentLine_char = '¦'
 " let g:indentLine_char = '┆'
-let g:indentLine_char = '│'
+" let g:indentLine_char = '│'
 " let g:indentLine_char = '.'
 " let g:indentLine_char = '»'
 "  of ¦, ┆, or │ t
