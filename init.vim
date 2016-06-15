@@ -1,4 +1,4 @@
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 "------------------------
 "VIMPLUG
@@ -15,6 +15,7 @@ Plug 'https://github.com/tomasr/molokai.git'
 Plug 'https://github.com/octol/vim-cpp-enhanced-highlight.git'
 " Plug 'jeaye/color_coded'
 Plug 'https://github.com/Yggdroot/indentLine.git'
+Plug 'https://github.com/owickstrom/vim-colors-paramount.git'
 call plug#end()
 
 "------------------------
@@ -154,15 +155,14 @@ nnoremap <LEADER>l :wincmd l<CR>
 "------------------------
 " COLORSCHEME
 "------------------------
-colorscheme dracula " For some reason molokai has a bug where the current tab is blank unless you set a different colorscheme first....
 
 " Customize some colors in dracula
+colorscheme dracula " For some reason molokai has a bug where the current tab is blank unless you set a different colorscheme first....
 hi Normal guibg=#1B1F20
-" hi Normal guibg=#202020
-hi Operator guifg=#2EAfCf
-hi Delimiter guifg=#00E080
-" hi Struct guifg=#2EAfCf
+hi Operator ctermfg=LightBlue guifg=#2EAfCf
+hi Delimiter ctermfg=LightGreen guifg=#00E080
 
+colorscheme paramount
 " colorscheme molokai
 " colorscheme jellybeans
 " colorscheme wolfpack
@@ -170,20 +170,25 @@ hi Delimiter guifg=#00E080
 " colorscheme sky
 " colorscheme inkpot
 " :set cursorline
-" hi Normal guibg=None
+
+hi Normal ctermbg=None guibg=None
+
 " hi Normal guibg=#1F1F1F
 
 "------------------------
 " AIRLINE
 "------------------------
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-" let g:airline_right_sep = ''
-" let g:airline_left_sep = ''
-let g:airline_theme='lucius'
+" let g:airline_left_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_left_sep = '>'
+" let g:airline_right_sep = '<'
+let g:airline_right_sep = ''
+let g:airline_left_sep = ''
+" let g:airline_theme='lucius'
+let g:airline_theme='zenburn'
 " let g:airline_theme='simple'
 " let g:airline_theme='sky'
 " let g:airline_theme='wolfpack'
