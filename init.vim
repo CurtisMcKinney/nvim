@@ -16,6 +16,7 @@ Plug 'https://github.com/octol/vim-cpp-enhanced-highlight.git'
 " Plug 'jeaye/color_coded'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/owickstrom/vim-colors-paramount.git'
+Plug 'https://github.com/gerw/vim-HiLinkTrace.git' "Plugin for tracing syntax groups
 call plug#end()
 
 "------------------------
@@ -174,8 +175,21 @@ colorscheme paramount
 
 " Make custom colorscheme?
 hi Normal ctermbg=None guibg=None
-hi Operator ctermfg=DarkGrey guifg=#506090
-hi Delimiter ctermfg=White guifg=#4090B0
+hi Operator ctermfg=DarkGrey guifg=#4070A0
+
+hi Delimiter ctermfg=White guifg=#20A0C0
+hi cCustomParen ctermfg=White guifg=#20A0C0
+
+hi Identifier gui=italic guifg=#406090
+
+hi cStorageClass guifg=#B03030
+hi Structure guifg=#B03030
+hi label guifg=#B03030
+hi cInclude guifg=#B03030
+
+hi cCustomClass guifg=#767676
+hi cType guifg=#767676
+hi Type guifg=#767676
 
 " hi Normal guibg=#1F1F1F
 
@@ -187,10 +201,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 " let g:airline_left_sep = ''
 " let g:airline_right_sep = ''
-let g:airline_left_sep = '>'
-let g:airline_right_sep = '<'
-" let g:airline_right_sep = ''
-" let g:airline_left_sep = ''
+" let g:airline_left_sep = '>'
+" let g:airline_right_sep = '<'
+let g:airline_right_sep = ''
+let g:airline_left_sep = ''
 " let g:airline_theme='lucius'
 let g:airline_theme='zenburn'
 " let g:airline_theme='simple'
