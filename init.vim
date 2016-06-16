@@ -1,4 +1,4 @@
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 "------------------------
 "VIMPLUG
@@ -159,9 +159,9 @@ nnoremap <LEADER>l :wincmd l<CR>
 
 " Customize some colors in dracula
 colorscheme dracula " For some reason molokai has a bug where the current tab is blank unless you set a different colorscheme first....
-hi Normal guibg=#1B1F20
-hi Operator ctermfg=LightBlue guifg=#2EAfCf
-hi Delimiter ctermfg=LightGreen guifg=#00E080
+" hi Normal guibg=#1B1F20
+" hi Operator ctermfg=LightBlue guifg=#2EAfCf
+" hi Delimiter ctermfg=LightGreen guifg=#00E080
 
 colorscheme paramount
 " colorscheme molokai
@@ -172,7 +172,10 @@ colorscheme paramount
 " colorscheme inkpot
 " :set cursorline
 
+" Make custom colorscheme?
 hi Normal ctermbg=None guibg=None
+hi Operator ctermfg=DarkGrey guifg=#506090
+hi Delimiter ctermfg=White guifg=#4090B0
 
 " hi Normal guibg=#1F1F1F
 
@@ -184,10 +187,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 " let g:airline_left_sep = ''
 " let g:airline_right_sep = ''
-" let g:airline_left_sep = '>'
-" let g:airline_right_sep = '<'
-let g:airline_right_sep = ''
-let g:airline_left_sep = ''
+let g:airline_left_sep = '>'
+let g:airline_right_sep = '<'
+" let g:airline_right_sep = ''
+" let g:airline_left_sep = ''
 " let g:airline_theme='lucius'
 let g:airline_theme='zenburn'
 " let g:airline_theme='simple'
