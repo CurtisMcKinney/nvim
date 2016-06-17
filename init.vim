@@ -182,10 +182,10 @@ hi cCustomParen ctermfg=White guifg=#20A0C0
 
 hi Identifier gui=italic guifg=#406090
 
-hi cStorageClass guifg=#B03030
-hi Structure guifg=#B03030
-hi label guifg=#B03030
-hi cInclude guifg=#B03030
+hi cStorageClass guifg=#505060
+hi Structure guifg=#505060
+hi label guifg=#505060
+hi cInclude guifg=#505060
 
 hi cCustomClass guifg=#767676
 hi cType guifg=#767676
