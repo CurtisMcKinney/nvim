@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/casiosk1/code/Necronomicon'
-let g:netrw_dirhist_2='/home/casiosk1/code/Necronomicon/Tests'
-let g:netrw_dirhist_3='/home/casiosk1/code/Necronomicon/Tests/NecronomiconTest'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/casiosk1/code/Necronomicon/src/Necronomicon/Utility'
+let g:netrw_dirhist_2='/home/casiosk1/code/Necronomicon/src/Necronomicon'
+let g:netrw_dirhist_3='/home/casiosk1/code/Necronomicon/src/Necronomicon/FRP'
+let g:netrw_dirhist_4='/home/casiosk1/code/Necronomicon'
+let g:netrw_dirhist_5='/home/casiosk1/code/Necronomicon/Tests'
+let g:netrw_dirhist_6='/home/casiosk1/code/Necronomicon/Tests/NecronomiconTest'
+let g:netrw_dirhist_7='/home/casiosk1/.config/nvim'

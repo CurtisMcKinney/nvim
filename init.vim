@@ -13,7 +13,6 @@ Plug 'https://github.com/tomtom/tcomment_vim.git'
 Plug 'https://github.com/raichoo/haskell-vim.git'
 Plug 'https://github.com/tomasr/molokai.git'
 Plug 'https://github.com/octol/vim-cpp-enhanced-highlight.git'
-" Plug 'jeaye/color_coded'
 Plug 'https://github.com/Yggdroot/indentLine.git'
 Plug 'https://github.com/owickstrom/vim-colors-paramount.git'
 Plug 'https://github.com/gerw/vim-HiLinkTrace.git' "Plugin for tracing syntax groups
@@ -79,10 +78,10 @@ filetype on
 filetype indent on
 filetype plugin on
 
-let g:indentLine_char = ' '
+" let g:indentLine_char = ' '
 " let g:indentLine_char = '¦'
 " let g:indentLine_char = '┆'
-" let g:indentLine_char = '│'
+let g:indentLine_char = '│'
 " let g:indentLine_char = '.'
 " let g:indentLine_char = '»'
 "  of ¦, ┆, or │ t
@@ -125,10 +124,10 @@ map <M-j> }
 
 tnoremap <ESC><ESC> <C-\><C-N>
 
-"nnoremap <C-l> :bnext<CR>
-"nnoremap <C-h> :bprevious<CR>
-"map <C-k> {
-"map <C-j> }
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-h> :bprevious<CR>
+map <C-k> {
+map <C-j> }
 
 :set wildignore+=*uasset,*.o,*.obj,*.meta,*.mat,*.hi,*.jpg,*.png,*.psd,*.controller,*.fbx,*.anim,*.unity,*.db,*.pdf,*.prefab,*.tif,**/.git/*,**/.svn/*,*.tga,*.dll,*.sln,*.zip,*.lnk,*.assets,*.bmp,*.TTF,*.apk,*.wavm,*.lib,*.dyn_hi,*.dyn_o,**/dist
 
@@ -158,14 +157,17 @@ nnoremap <LEADER>l :wincmd l<CR>
 " COLORSCHEME
 "------------------------
 
-" Customize some colors in dracula
-colorscheme dracula " For some reason molokai has a bug where the current tab is blank unless you set a different colorscheme first....
+" " Customize some colors in dracula
+colorscheme dracula
 " hi Normal guibg=#1B1F20
 " hi Operator ctermfg=LightBlue guifg=#2EAfCf
 " hi Delimiter ctermfg=LightGreen guifg=#00E080
 
 colorscheme paramount
+" colorscheme jellybeans
+" let g:molokai_original = 1
 " colorscheme molokai
+" let g:molokai_original = 1
 " colorscheme jellybeans
 " colorscheme wolfpack
 " colorscheme muon
@@ -174,11 +176,11 @@ colorscheme paramount
 " :set cursorline
 
 " Make custom colorscheme?
-hi Normal ctermbg=None guibg=None
+hi Normal ctermbg=None guibg=None guifg=#D0D0D0
 hi Operator ctermfg=DarkGrey guifg=#4070A0
 
-hi Delimiter ctermfg=White guifg=#20A0C0
-hi cCustomParen ctermfg=White guifg=#20A0C0
+hi Delimiter ctermfg=White guifg=#10A0C0
+hi cCustomParen ctermfg=White guifg=#10A0C0
 
 hi Identifier gui=italic guifg=#406090
 
@@ -190,23 +192,30 @@ hi cInclude guifg=#505060
 hi cCustomClass guifg=#767676
 hi cType guifg=#767676
 hi Type guifg=#767676
-
-" hi Normal guibg=#1F1F1F
+hi Normal guibg=#1F1F1F
+hi Normal ctermfg=None guibg=#1B1F20
 
 "------------------------
 " AIRLINE
 "------------------------
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-" let g:airline_left_sep = ''
-" let g:airline_right_sep = ''
+
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 " let g:airline_left_sep = '>'
 " let g:airline_right_sep = '<'
-let g:airline_right_sep = ''
-let g:airline_left_sep = ''
-" let g:airline_theme='lucius'
-let g:airline_theme='zenburn'
+" let g:airline_right_sep = ''
+" let g:airline_left_sep = ''
+let g:airline_theme='lucius'
+" let g:airline_theme='dracula'
+" let g:airline_theme='zenburn'
+" let g:airline_theme='jellybeans'
+" let g:airline_theme='serene'
 " let g:airline_theme='simple'
 " let g:airline_theme='sky'
-" let g:airline_theme='wolfpack'
+"
+"
+"
+"
